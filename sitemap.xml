@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/dynamics/</loc>
+  </url>
+  
+  <url>
+    <loc>/presentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/product/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/product/mercury/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/merc_tkrs/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/micar/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/selena/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/karat/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/ris/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/proby/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/product/chess/</loc>
+  </url>
+  
+</urlset>
