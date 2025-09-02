@@ -1,302 +1,328 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Финист-М </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Финист-М | Инновационные решения для нефтяной промышленности</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="Keywords" content="ТКРС, Программа для сводок текущего и капитального ремонта скважин, Электронная шахматка, Отказы УЭЦН, Отказы установок электропогружных центробежных насосов, Предотвращение отказов УЭЦН, Защиты станций управления УЭЦН, Конструкция скважины, Сводка сменного технолога нефтепромысла, Программа для лабораторных проб по скважинам, Гидродинамические исследования скважин, Трехмерные модели оборудования скважин, Устьевая арматура скважин, Программа по простоям бригад ТКРС, Программа по анализу коэффициента производительного времени бригад ТКРС, Программа нормирования подземного и капитального ремонта скважин, Программа мониторинга работы бригады капитального строительства нефтепромысловых объектов, Программа предиктивной аналитики отказов УЭЦН, Программа автоматического определения отказов УЭЦН, Программа автоматического формирования акта ПДК, Программа для сервисных предприятий ТКРС, бурения, баз ЭПУ, капитального строительства">
+    <meta name="Keywords" content="ТКРС, Программа для сводок текущего и капитального ремонта скважин, Электронная шахматка, Отказы УЭЦН, Предотвращение отказов УЭЦН, Сводка сменного технолога нефтепромысла, Программа для лабораторных проб по скважинам, Гидродинамические исследования скважин">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #fff !important;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        .dropdown-menu {
+            background-color: #2c5282;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.85);
+            transition: all 0.2s;
+        }
+        .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 1.5rem;
+            border: none;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .card-img-top {
+            height: 180px;
+            object-fit: contain;
+            padding: 1rem;
+            background-color: #f8fafc;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(26, 58, 108, 0.8), rgba(44, 82, 130, 0.8)), 
+            url('/stalker/img/bg_.png') center/cover no-repeat;
+            padding: 5rem 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            color: #1a3a6c;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #2c5282, #1a3a6c);
+            border-radius: 3px;
+        }
+        .product-title {
+            color: #1a3a6c;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .footer {
+            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2c5282 0%, #1a3a6c 100%);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
+        }
+        .contact-info {
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-info h5 {
+            color: #1a3a6c;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
 
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.81.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand me-3" href="/">
+            <img src="/img/lg_fm.png" alt="ООО «Финист-М»">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/stalker/index.html">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Продукты</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/stalker/product/altair.html">Предиктивная аналитика УЭЦН «Альтаир»</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/micar.html'>АПК «Мицар»</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/selena.html'>АПК «Селена»</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/mercury.html'>АПК «Меркурий» для нефтедобывающих предприятий</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/merc_tkrs.html'>АПК «Меркурий» для сервисных предприятий ТКРС/бурения</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/karat.html'>АПК «Карат»</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/chess.html'>Электронная Шахматка</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/proby.html'>Физико-химические исследования проб жидкости</a></li>
+                        <li><a class="dropdown-item" href='/stalker/product/ris.html'>Результаты гидродинамических исследований скважин</a></li>
+                        <li><a class="dropdown-item" href='/stalker/dynamics/index.html'>Динамика внедрения</a></li>
+                        <li><a class="dropdown-item" href='/stalker/presentation/index.html'>Нефтепромысловое оборудование</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Механизированный фонд</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='/stalker/blog/prim.html'>Влияние механических примесей на работу УЭЦН</a></li>
+                        <li><a class="dropdown-item" href='/stalker/blog/cabel.html'>Причины оплавления погружного кабеля УЭЦН</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Компания</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='/stalker/about/about.html'>О компании</a></li>
+                        <li><a class="dropdown-item" href='/stalker/about/contacts.html'>Контакты</a></li>
+                        <li><a class="dropdown-item" href='/stalker/about/people.html'>Руководство</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    
+<section class="hero-section">
+    <div class="container">
+        <h1 class="display-4 mb-3">Финист-М</h1>
+        <p class="lead">Инновационные решения для нефтяной и газовой промышленности</p>
+    </div>
+</section>
 
-    <link rel="stylesheet" type="text/css" href='/css/website.css' />
-    <link href='/lib/superfish/superfish.css' media='screen' rel='stylesheet' type='text/css'>
-    <link href='/lib/lightbox/css/lightbox.css' media='screen' rel='stylesheet' type='text/css'>
-    <script src='/js/rocon.js'></script>
-    <script src='/lib/jquery-1.11.0.min.js'></script>
-    <script src='https://code.jquery.com/ui/1.11.1/jquery-ui.min.js'></script>
-    <script src='/lib/flowplayer/flowplayer.min.js'></script>
-    <script src='/lib/superfish/superfish.min.js'></script>
-    <script src='/lib/superfish/hoverIntent.js'></script>
-    <script src='/lib/lightbox/js/lightbox.min.js'></script>
-    <script src='/js/acc.js'></script>
+<main class="container py-4">
+    <div class="contact-info">
+        <div class="row">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <h5>Электронная почта</h5>
+                <p><a href="mailto:referent@stalkerltd.ru" class="text-decoration-none">referent@stalkerltd.ru</a></p>
+            </div>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <h5>Адрес</h5>
+                <p>г. Мегион, пр. Победы, 3</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Телефон</h5>
+                <p>+7 (34643) 3-33-03</p>
+            </div>
+        </div>
+    </div>
 
+    <h2 class="section-title">Наши продукты</h2>
     
-      
-    
+    <div class="row">
 
-  </head>
-
-  <body>
-    <div id="wrapper">
-      
-        <div id='nav-wrap'>
-  <ul class='sf-menu' id='navi'>
-    
-    
-      
-          <li class=''>
-              <a href="/">Главная</a>
-          </li>
-      
-    
-      
-          <li>
-              <a>Продукты</a>
-              <ul>
-                  
-                    
-                    <li>
-                      <a href='/product/altair'>Предиктивная аналитика УЭЦН «Альтаир»</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/micar'>АПК «Мицар»</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/selena'>АПК «Селена»</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/mercury'>АПК «Меркурий» для нефтедобывающих предприятий</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/merc_tkrs'>АПК «Меркурий» для сервисных предприятий ТКРС/бурения</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/karat'>АПК «Карат»</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/chess'>Электронная Шахматка</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/proby'>Физико-химические исследования проб жидкости</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/product/ris'>Результаты гидродинамических исследований скважин</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/dynamics'>Динамика внедрения</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/presentation'>Нефтепромысловое оборудование</a>
-                    </li>
-                    
-                  
-              </ul>
-          </li>
-      
-    
-      
-          <li>
-              <a>Механизированный фонд</a>
-              <ul>
-                  
-                    
-                    <li>
-                      <a href='/blog/prim'>Влияние механических примесей на работу УЭЦН</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/blog/cabel'>Причины оплавления погружного кабеля УЭЦН</a>
-                    </li>
-                    
-                  
-              </ul>
-          </li>
-      
-    
-      
-          <li>
-              <a>Компания</a>
-              <ul>
-                  
-                    
-                    <li>
-                      <a href='/about'>О компании</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/about#contacts'>Контакты</a>
-                    </li>
-                    
-                  
-                    
-                    <li>
-                      <a href='/about#people'>Руководство</a>
-                    </li>
-                    
-                  
-              </ul>
-          </li>
-      
-    
-  </ul>
-</div>
-<script>
-  (function($){ 
-    $(document).ready(function(){
-      
-      var example = $('#navi').superfish();
-    });
-  
-  })(jQuery);
-</script>
-      
-      
-        <div id='headd'>
-  <div id='headop'></div>
-  <table border='0' cellspacing='0' id='header' width='100%'>
-    <tr valign='center'>
-      <td width='30%'>
-        <b>Электронная почта<br><a href='mailto:referent@stalkerltd.ru'>referent@stalkerltd.ru</a></b>
-      </td>
-      <td width='10%'>
-        <span href='/' id='head_logo' title='ООО «Финист-М'>
-          <img align='center' alt='ООО «Финист-М' src='/img/lg_fm.png'>
-        </span>
-      </td>
-      <td width='30%'>
-        <b>г. Мегион, пр. Победы, 3<br>Телефон:
-        +7 (34643) 3-33-03</b>
-      </td>
-    </tr>
-  </table>
-</div>
-      
-      <div id="main">
-        <div id="prim_container">
-          <div id="opwrap">
-            <div id="content_wrap">
-                <div id="content">
-                  
-<div class='index'>
-  <h1>Финист-М</h1>
-  <p>Инновационные решения для нефтяной и газовой промышленности</p>
-</div>
-<div class='blocks'>
-  <div class='products_block'>
-    <h2 class='rc10'>Продукты</h2>
-    <div class='product_elem'>
-      <img src='/img/products/altair.png'>
-      <h3>
-        <a href='/product/altair'>Предиктивная аналитика УЭЦН «Альтаир»</a>
-      </h3>
-      <p>Программный комплекс «Альтаир» является частью АПК «Меркурий» и предназначен для анализа работы и выдаче рекомендаций по настройке параметров работы станции управления УЭЦН с целью оптимизации режимов работы погружного насосного оборудования. Основной целью работы в программе «Альтаир» является повышение наработки на отказ погружного насосного оборудования. Данная цель достигается с помощью анализа данных контроллера станции управления (включая уставки защит и временные пределы их работы), а также режимных параметров насосного оборудования (подача, обводненность и т.д.). Основой анализа данных программы служит система искусственного интеллекта, основанная на нескольких схемах факторного анализа (метод экспертных оценок, Machine Learning, Data Mining, Data Science ).</p>
-    </div>
-	<div class='product_elem'>
-      <img src='/img/products/karat.png'>
-      <h3>
-        <a href='/product/karat'>АПК «Карат»</a>
-      </h3>
-      <p>Данный программный комплекс предназначен для создания в базе данных показателей любого типа, ручного ввода или автоматической подгрузки цифровой информации, связанной с ними. Подгрузка может осуществляться как из Excel файлов, так и баз данных всевозможных программ. Программа предназначена для создания бизнес-плана предприятия любого профиля и контроля его исполнения.</p>
-    </div>
-    <div class='product_elem'>
-      <img src='/img/products/mercury.png'>
-      <h3>
-        <a href='/product/mercury'>АПК «Меркурий» для нефтедобывающих предприятий</a>
-      </h3>
-      <p>АПК «Меркурий» представляет из себя программное решение суточных сводок нефтепромысла в части работы с фондом скважин (запуски, остановки, вывод на режим,  внутрисменные простои, работа с периодическим фондом, аварийная ситуация на ЛЭП и трубопроводах, обработка скважин всеми видами химреагентов, включая глушение, сводки подземного и капитального ремонта скважин, бурения, освоения). Область применения комплекса — нефтегазодобывающая промышленность, предприятия, непосредственно осуществляющие эксплуатацию нефтяных и нагнетательных скважин. Программа устанавливается  на рабочих местах специалистов нефтепромыслов — сменных технологов нефтепромысла, сменных технологов сервисных предприятий (текущего и капитального ремонта скважин, бурения, освоения), технологической и геологической служб, а также в аппаратах управления нефтегазодобывающих предприятий</p>
-    </div>
-    <div class='product_elem'>
-      <img src='/img/products/mercury.png'>
-      <h3>
-        <a href='/product/merc_tkrs'>АПК «Меркурий» для сервисных предприятий ТКРС/бурения</a>
-      </h3>
-      <p>АПК «Меркурий» представляет из себя программный комплекс для автоматизации рабочих мест инженерного персонала сервисного предприятия по текущему и капитальному ремонту скважин, бурению. В основе программного комплекса лежит суточная сводка бригад ТКРС и вспомогательных подразделений (баз производственного обслуживания, транспортного подразделения, службы материально-технического снабжения). У сервисного предприятия ТКРС нередко бывает несколько заказчиков из числа нефтегазодобывающих компаний. Как правило, они имеют собственное программное обеспечение по учету работы бригад ТКРС. При работе в таком режиме сервисные предприятия ведут суточные сводки в нескольких программных комплексах заказчика. С внедрением АПК «Меркурий» сервисное предприятие получает потенциальную возможность автоматически отправлять сводку из своей программы в программное обеспечение заказчика. При этом соблюдается необходимый для сервиса режим корректировки суточной информации перед ее отправкой заказчику. АПК «Меркурий» имеет дружественный, интуитивно понятный интерфейс. Ввод данных предельно эргономичен, у пользователя уходит минимум времени на ввод необходимой информации. Это достигается применением справочников, логическим наследованием ранее введенной информации, контролем программы за потенциально ошибочными действиями пользователя при вводе дат, цифровых показателей, логики операций при проведении ремонтов и т.д. Программа устанавливается на рабочих местах сменных технологов сервисного предприятия, которые могут осуществлять до 100% изначально вводимой необходимой информации. В зависимости от схемы распределения обязанностей в сервисном предприятии, заполнение/корректировка ряда данных может быть поручена профильным специалистам аппарата управления предприятия. АПК «Меркурий» работает в терминальном режиме в рамках серверного пространства конкретного предприятия. Это означает, что доступ к программе в защищенном виде может быть представлен любому специалисту из любой точки планеты при наличии Интернета.</p>
-    </div>
-    <div class='product_elem'>
-      <img src='/img/products/micar.png'>
-      <h3>
-        <a href='/product/micar'>АПК «Мицар»</a>
-      </h3>
-      <p>Аппаратно–программный комплекс «Мицар» — это система учета и работы наземного и погружного насосного оборудования и его элементов.</p>
-      
-      <p>Программа работает со всей линейкой известного насосного оборудования — УЭЦН, УШНГ, УВНТ, УЭЦПК, УЭЦВ и т.д. Область применения комплекса — нефтегазодобывающая промышленность, сервисные предприятия по прокату и обслуживанию центробежных, штанговых и других видов насосного оборудования и его элементов (станции управления, автотрансформаторы и т.д.). Цикл учета работы и движения оборудования начинается от поставки в производство новой продукции в виде узлов, комплектации их, передачи для монтажа в скважину, учета работы оборудования в скважине и возврата в сервисное предприятие после демонтажа. Внутри сервисного предприятия узлы оборудования проходят все стадии от входного контроля до капитального ремонта или списания.</p>
-    </div>
-    <div class='product_elem'>
-      <img src='/img/products/selena.png'>
-      <h3>
-        <a href='/product/selena'>АПК «Селена»</a>
-      </h3>
-      <p>Аппаратно-программный комплекс (АПК) «Селена» предназначен для учета работы и движения насосно–компрессорных труб (НКТ), штанг, буровых колонн и прочих элементов трубных колонн. Область применения комплекса–нефтегазодобывающая промышленность, сервисные предприятия, связанные с обслуживанием нефтегазодобывающих предприятий, заводы по производству трубной и штанговой продукции. Цикл учета работы и движения оборудования начинается от поставки в производство новой продукции, завоза ее на трубные площадки, ремонтные базы и сервисные предприятия, связанные с ремонтом скважин. АПК «Селена» состоит из модулей, в каждом из которых отражается своя часть производственного цикла.</p>
-    </div>
-    <div class='product_elem'>
-      <img src='/img/products/chess.png'>
-      <h3>
-        <a href='/product/chess'>Электронная шахматка</a>
-      </h3>
-      <p>Программа «Электронная Шахматка» предназначена для просмотра и анализа информации по работе добывающих и нагнетательных скважин. Область применения комплекса — нефтегазодобывающая промышленность, предприятия, непосредственно осуществляющие эксплуатацию нефтяных и нагнетательных скважин. Программа устанавливается  на рабочих местах специалистов нефтепромыслов — технологической и геологической служб, а также в аппаратах управления нефтегазодобывающих предприятий. В программе отображаются по каждой скважине суточный дебит жидкости (закачки воды), пробы отбираемой жидкости, динамические и статические уровни, устьевые и глубинные давления, сведения об обработках скважин химреагентами (глушение, обработка горячей нефтью, обработка специальными химреагентами и т.д.).</p>
-    </div>
-    <div class='product_elem'>
-      <h3>
-        <a href='/product/proby'>Физико-химические исследования проб жидкости</a>
-      </h3>
-      <p>Программный комплекс «Пробы» предназначен для ввода и анализа данных проб жидкости, отбираемых из добывающих скважин. Область применения комплекса — нефтегазодобывающая промышленность, предприятия, непосредственно осуществляющие эксплуатацию нефтяных и нагнетательных скважин. Рабочие места программы устанавливаются в промысловых лабораториях, которые проводят исследования проб жидкости и нефти, а также на рабочих местах специалистов нефтепромыслов — технологической и геологической служб.</p>
-    </div>
-    <div class='product_elem'>
-      <h3>
-        <a href='/product/ris'>Результаты гидродинамических исследований скважин</a>
-      </h3>
-      <p>Программный комплекс РИС (Результаты Исследования Скважин) предназначен для ввода и обработки данных по всем видам гидродинамических исследований, которые проводятся на скважинах. Область применения комплекса – нефтегазодобывающая промышленность, предприятия, непосредственно осуществляющие эксплуатацию нефтяных и нагнетательных скважин.</p>
-    </div>
-  </div>
-</div>
-
-
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/altair.png" class="card-img-top" alt="Предиктивная аналитика УЭЦН «Альтаир»">
+                <div class="card-body">
+                    <h3 class="product-title">Предиктивная аналитика УЭЦН «Альтаир»</h3>
+                    <p class="card-text">Анализ работы и выдача рекомендаций по настройке параметров работы станции управления УЭЦН с целью оптимизации режимов работы погружного насосного оборудования.</p>
+                    <a href="/stalker/product/altair.html" class="btn btn-primary">Подробнее</a>
                 </div>
             </div>
-            <div class='footer' style='width:250px;margin:0 auto;'>
-  <center>
-    &copy; 2025 Финист-М
-    <a href="https://sk.ru/"><img src="/img/sk_resident2ru.jpg" style="width:150px"></a>
-  </center>
-</div>
-            
-          </div>
         </div>
-      </div>
+        
+        <!-- Продукт 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/karat.png" class="card-img-top" alt="АПК «Карат»">
+                <div class="card-body">
+                    <h3 class="product-title">АПК «Карат»</h3>
+                    <p class="card-text">Создание в базе данных показателей любого типа, ручной ввод или автоматическая подгрузка цифровой информации. Создание бизнес-плана предприятия и контроль его исполнения.</p>
+                    <a href="/stalker/product/karat.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/mercury.png" class="card-img-top" alt="АПК «Меркурий» для нефтедобывающих предприятий">
+                <div class="card-body">
+                    <h3 class="product-title">АПК «Меркурий» для нефтедобывающих предприятий</h3>
+                    <p class="card-text">Программное решение суточных сводок нефтепромысла в части работы с фондом скважин. Устанавливается на рабочих местах специалистов нефтепромыслов.</p>
+                    <a href="/stalker/product/mercury.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/mercury.png" class="card-img-top" alt="АПК «Меркурий» для сервисных предприятий">
+                <div class="card-body">
+                    <h3 class="product-title">АПК «Меркурий» для сервисных предприятий ТКРС/бурения</h3>
+                    <p class="card-text">Автоматизация рабочих мест инженерного персонала сервисного предприятия по текущему и капитальному ремонту скважин, бурению.</p>
+                    <a href="/stalker/product/merc_tkrs.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/micar.png" class="card-img-top" alt="АПК «Мицар»">
+                <div class="card-body">
+                    <h3 class="product-title">АПК «Мицар»</h3>
+                    <p class="card-text">Система учета и работы наземного и погружного насосного оборудования и его элементов. Работает со всей линейкой известного насосного оборудования.</p>
+                    <a href="/stalker/product/micar.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/selena.png" class="card-img-top" alt="АПК «Селена»">
+                <div class="card-body">
+                    <h3 class="product-title">АПК «Селена»</h3>
+                    <p class="card-text">Учет работы и движения насосно-компрессорных труб (НКТ), штанг, буровых колонн и прочих элементов трубных колонн.</p>
+                    <a href="/stalker/product/selena.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 7 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="/img/products/chess.png" class="card-img-top" alt="Электронная Шахматка">
+                <div class="card-body">
+                    <h3 class="product-title">Электронная Шахматка</h3>
+                    <p class="card-text">Просмотр и анализ информации по работе добывающих и нагнетательных скважин. Отображение суточного дебита жидкости, проб, динамических и статических уровней.</p>
+                    <a href="/stalker/product/chess.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 8 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="product-title">Физико-химические исследования проб жидкости</h3>
+                    <p class="card-text">Ввод и анализ данных проб жидкости, отбираемых из добывающих скважин. Устанавливается в промысловых лабораториях.</p>
+                    <a href="/stalker/product/proby.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Продукт 9 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="product-title">Результаты гидродинамических исследований скважин</h3>
+                    <p class="card-text">Ввод и обработка данных по всем видам гидродинамических исследований, которые проводятся на скважинах.</p>
+                    <a href="/stalker/product/ris.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2025 Финист-М. Все права защищены.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="https://sk.ru/" target="_blank">
+                    <img src="/img/sk_resident2ru.jpg" alt="Резидент Сколково" style="height: 50px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
