@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Финист-М | Нефтепромысловое оборудование</title>
+    <title>ВЕГА-М25 | ИИ для сводок ТКРС</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="Keywords" content="ТКРС, Программа для сводок текущего и капитального ремонта скважин, Электронная шахматка, Отказы УЭЦН, Отказы установок электропогружных центробежных насосов, Предотвращение отказов УЭЦН, Защиты станций управления УЭЦН, Конструкция скважины, Сводка сменного технолога нефтепромысла, Программа для лабораторных проб по скважинам, Гидродинамические исследования скважин, Трехмерные модели оборудования скважин, Устьевая арматура скважин, Программа по простоям бригад ТКРС, Программа по анализу коэффициента производительного времени бригад ТКРС, Программа нормирования подземного и капитального ремонта скважин, Программа мониторинга работы бригады капитального строительства нефтепромысловых объектов, Программа предиктивной аналитики отказов УЭЦН, Программа автоматического определения отказов УЭЦН, Программа автоматического формирования акта ПДК, Программа для сервисных предприятий ТКРС, бурения, баз ЭПУ, капитального строительства">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href='/lib/lightbox/css/lightbox.css' media='screen' rel='stylesheet' type='text/css'>
-    <link href='//vjs.zencdn.net/4.8/video-js.css' rel='stylesheet' type='text/css'>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,6 +64,29 @@
             border-radius: 8px 8px 0 0 !important;
             font-weight: 600;
         }
+        .product-img {
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+        }
+        .resource-item {
+            border-left: 4px solid #2c5282;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: #f8fafc;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.2s;
+        }
+        .resource-item:hover {
+            background-color: #e2e8f0;
+            transform: translateX(5px);
+        }
+        .footer {
+            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
         .section-title {
             position: relative;
             padding-bottom: 15px;
@@ -82,12 +103,6 @@
             background: linear-gradient(90deg, #2c5282, #1a3a6c);
             border-radius: 3px;
         }
-        .footer {
-            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
-            color: white;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
         .img-desc {
             font-size: 0.9rem;
             color: #6c757d;
@@ -96,40 +111,52 @@
             margin-bottom: 20px;
             font-style: italic;
         }
-        .gallery-item {
-            margin-bottom: 30px;
-        }
-        .gallery-item h3 {
-            margin-bottom: 15px;
+
+        .contact-info h5 {
             color: #1a3a6c;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
-        .gallery-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .video-container iframe,
-        .video-container video {
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200%;
+
+        /* Стили для кнопки ресурсов */
+        .btn-resources {
+            background: linear-gradient(135deg, #2c5282 0%, #1a3a6c 100%);
+            color: white;
             border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .btn-resources:hover {
+            background: linear-gradient(135deg, #1a3a6c 0%, #2c5282 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-menu-resources {
+            max-height: 300px;
+            overflow-y: auto;
+            width: 100%;
+            background-color: #2c5282;
+        }
+        .dropdown-item-resource {
+            padding: 8px 15px;
+            color: rgba(255, 255, 255, 0.85);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .dropdown-item-resource:last-child {
+            border-bottom: none;
+        }
+        .dropdown-item-resource:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
         }
     </style>
 </head>
 <body>
-<!-- Навигационная панель -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
         <a class="navbar-brand me-3" href="/">
@@ -142,6 +169,13 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/index.html">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Новости</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/news/AI_tkrs.html">ИИ для сводок ТКРС</a></li>
+                        <li><a class="dropdown-item" href='/news/AI_uecn.html'>ИИ для УЭЦН</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Продукты</a>
@@ -175,6 +209,11 @@
                     </ul>
                 </li>
             </ul>
+            <div class="navbar-right-logo">
+                <a href="https://fasie.ru/" target="_blank">
+                    <img src="/img/logo_w.svg" style="height: 50px;" alt="">
+                </a>
+            </div>
         </div>
     </div>
 </nav>
@@ -226,8 +265,8 @@
                 <p class="mb-0">&copy; 2025 Финист-М. Все права защищены.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <a href="https://sk.ru/" target="_blank">
-                    <img src="/img/sk_resident2ru.jpg" alt="Резидент Сколково" style="height: 50px;">
+                <a href="https://fasie.ru/" target="_blank">
+                    <img src="/img/logo_w.svg" style="height: 50px;" alt="Фонд содействия инновациям">
                 </a>
             </div>
         </div>

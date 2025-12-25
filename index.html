@@ -22,6 +22,9 @@
         .navbar-brand img {
             height: 50px;
         }
+        .navbar-right-logo img {
+            height: 45px;
+        }
         .navbar-nav .nav-link {
             color: rgba(255, 255, 255, 0.85) !important;
             font-weight: 500;
@@ -72,6 +75,17 @@
             color: white;
             text-align: center;
             margin-bottom: 3rem;
+        }
+        .company-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .company-title h1 {
+            margin: 0;
+            display: inline-block;
         }
         .section-title {
             position: relative;
@@ -136,6 +150,13 @@
                     <a class="nav-link active" href="/index.html">Главная</a>
                 </li>
                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Новости</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/news/AI_tkrs.html">ИИ для сводок ТКРС</a></li>
+                        <li><a class="dropdown-item" href='/news/AI_uecn.html'>ИИ для УЭЦН</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Продукты</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/product/altair.html">Предиктивная аналитика УЭЦН «Альтаир»</a></li>
@@ -167,14 +188,22 @@
                     </ul>
                 </li>
             </ul>
+            <div class="navbar-right-logo">
+                <a href="https://fasie.ru/" target="_blank">
+                    <img src="/img/logo_w.svg" style="height: 50px;" alt="">
+                </a>
+            </div>
         </div>
     </div>
 </nav>
 
 <section class="hero-section">
     <div class="container">
-        <h1 class="display-4 mb-3">Финист-М</h1>
-        <p class="lead">Инновационные решения для нефтяной и газовой промышленности</p>
+        <div class="company-title">
+            <h1 class="display-4">Финист-М</h1>
+            <h1 class="display-4">Вега-М25</h1>
+        </div>
+        <p class="lead mt-3">Инновационные решения для нефтяной и газовой промышленности</p>
     </div>
 </section>
 
@@ -315,8 +344,8 @@
                 <p class="mb-0">&copy; 2025 Финист-М. Все права защищены.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <a href="https://sk.ru/" target="_blank">
-                    <img src="/img/sk_resident2ru.jpg" alt="Резидент Сколково" style="height: 50px;">
+                <a href="https://fasie.ru/" target="_blank">
+                    <img src="/img/logo_w.svg" style="height: 50px;" alt="Фонд содействия инновациям">
                 </a>
             </div>
         </div>
